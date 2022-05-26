@@ -1,6 +1,6 @@
 {
 	"name": "custom-message-react-modal",
-	"version": "1.0.0",
+	"version": "1.0.2",
 	"description": "Generic modal to display custom message",
 	"keywords": [
 		"modal",
@@ -16,7 +16,8 @@
 	],
 	"devDependencies": {
 		"@babel/cli": "^7.17.10",
-		"babel-cli": "^6.26.0",
+		"@babel/core": "^7.18.2",
+		"@babel/preset-env": "^7.18.2",
 		"cross-env": "^7.0.3",
 		"react": "^18.1.0",
 		"react-dom": "^18.1.0",
@@ -28,6 +29,7 @@
 		"react-dom": "^16.3.2"
 	},
 	"dependencies": {
+		"@babel/polyfill": "^7.12.1",
 		"@emotion/react": "^11.9.0",
 		"@emotion/styled": "^11.8.1",
 		"@mui/material": "^5.8.0",
@@ -42,7 +44,7 @@
 		"build": "cross-env NODE_ENV=production babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject"
-	  },
+	},
 	"eslintConfig": {
 		"extends": [
 			"react-app",
