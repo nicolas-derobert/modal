@@ -1,86 +1,47 @@
 # custom-message-react-modal
+
+Modal jsx element with customizable message 
 ## Table of Contents
 
+* [Features](#Features)
 * [Installation](#installation)
-* [API documentation](#api-documentation)
 * [Examples](#examples)
-* [Demos](#demos)
+
+## Features
+- Allow customization of messages that is displayed in modal
+- 
 
 ## Installation
 
 To install, you can use [npm](https://npmjs.org/) :
 
-    $ npm install custom-message-react-modal
-    
+    $ npm install custom-message-react-modal    
 
 ## Examples
 
-Here is a simple example of react-modal being used in an app with some custom
-styles and focusable input elements within the modal content:
+Here is a simple example of custom-message-react-modal being used in an app with some custom input elements within the modal content:
 
 ```jsx
-import React from 'react';
-import ReactDOM from 'react-dom';
-import Modal from 'react-modal';
+import React from "react";
+import { CustomMessageModal } from "custom-message-react-modal";
 
-const customStyles = {
-  content: {
-    top: '50%',
-    left: '50%',
-    right: 'auto',
-    bottom: 'auto',
-    marginRight: '-50%',
-    transform: 'translate(-50%, -50%)',
-  },
-};
-
-// Make sure to bind modal to your appElement (https://reactcommunity.org/react-modal/accessibility/)
-Modal.setAppElement('#yourAppElement');
-
-function App() {
-  let subtitle;
-  const [modalIsOpen, setIsOpen] = React.useState(false);
-
-  function openModal() {
-    setIsOpen(true);
-  }
-
-  function afterOpenModal() {
-    // references are now sync'd and can be accessed.
-    subtitle.style.color = '#f00';
-  }
-
-  function closeModal() {
-    setIsOpen(false);
-  }
-
-  return (
-    <div>
-      <button onClick={openModal}>Open Modal</button>
-      <Modal
-        isOpen={modalIsOpen}
-        onAfterOpen={afterOpenModal}
-        onRequestClose={closeModal}
-        style={customStyles}
-        contentLabel="Example Modal"
-      >
-        <h2 ref={(_subtitle) => (subtitle = _subtitle)}>Hello</h2>
-        <button onClick={closeModal}>close</button>
-        <div>I am a modal</div>
-        <form>
-          <input />
-          <button>tab navigation</button>
-          <button>stays</button>
-          <button>inside</button>
-          <button>the modal</button>
-        </form>
-      </Modal>
-    </div>
-  );
+function App(props) {
+	const [open, setOpen] = React.useState(false);
+	const handleOpen = () => setOpen(true);
+	const handleClose = () => setOpen(false);
+	return (
+		<div>
+			<button onClick={handleOpen}>Hello</button>
+			<CustomMessageModal
+				isOpen={open}
+				onRequestClose={handleClose}
+				messageToDisplay={"Message to display"}
+			></CustomMessageModal>
+		</div>
+	);
 }
+export default App;
 
-ReactDOM.render(<App />, appElement);
 ```
 
-You can find more examples in the `examples` directory, which you can run in a
-local development server using `npm start` or `yarn run start`.
+
