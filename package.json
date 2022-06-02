@@ -7,6 +7,7 @@
 		"custom",
 		"react"
 	],
+	"licence":"MIT",
 	"author": "Nicolas DEROBERT",
 	"main": "dist/index.js",
 	"module": "dist/index.js",
@@ -19,9 +20,6 @@
 		"@babel/core": "^7.18.2",
 		"@babel/preset-env": "^7.18.2",
 		"cross-env": "^7.0.3",
-		"react": "^18.1.0",
-		"react-dom": "^18.1.0",
-		"react-scripts": "5.0.1",
 		"rimraf": "^3.0.2"
 	},
 	"peerDependencies": {
