@@ -11,7 +11,7 @@ function App(props) {
 			<CustomMessageModal
 				isOpen={open}
 				onRequestClose={handleClose}
-				messageToDisplay={"Message to display"}
+				messageToDisplay={"Message to display2"}
 			></CustomMessageModal>
 		</div>
 	);
