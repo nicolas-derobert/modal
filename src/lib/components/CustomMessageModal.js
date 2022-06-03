@@ -6,10 +6,10 @@ import "./CustomMessageModal.css";
 
 
 export default function CustomMessageModal(props) {
-	const [open, setOpen] = React.useState(false);
-	const handleOpen = () => setOpen(true);
+	// const [open, setOpen] = React.useState(false);
+	// const handleOpen = () => setOpen(true);
 	const handleClose = () => {
-		setOpen(false);
+		// setOpen(false);
 		props.onRequestClose();
 	};
 
@@ -17,9 +17,9 @@ export default function CustomMessageModal(props) {
 	// const closeRequest = props.onRequestClose;
 
 	React.useEffect(() => {
-		if (isOpen === true) {
-			handleOpen();
-		}
+		// if (isOpen === true) {
+		// 	handleOpen();
+		// }
 		if (isOpen === false) {
 			handleClose();
 		}
