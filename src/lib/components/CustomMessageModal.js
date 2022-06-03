@@ -28,7 +28,7 @@ export default function CustomMessageModal(props) {
 	return (
 		<div>
 			{/* <Modal open={open} onClose={handleClose}> */}
-			<div className={`cmm-backdrop${isOpen?`open`:``}`}>
+			<div className={`cmm-backdrop${isOpen?` open`:``}`}>
 				<div className="cmm-modal">
 					<div className="cmm-content">
 						<div className="cmm-title ">
