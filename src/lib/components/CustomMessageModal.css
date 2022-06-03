@@ -1,48 +1,66 @@
 .modalnewsletterform {
 }
-.modal {
+.cmm-backdrop{
+	display: none;
 	position: absolute;
-	top: 48%;
+	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	width: 40%;
-	height: 600px;
+	width: 100vw; 
+	height: 100vh;
+	background-color: rgb(219, 219, 219);
+}
+.cmm-backdrop.open{
+	display: block;
+}
+.cmm-modal {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 40%; 
+	height: 50%;
 	border-radius: 1rem;
-	background-color: grey;
+	/* background-color: grey; */
 }
-.content {
-	position: "absolute";
-	top: "50%";
-	left: "50%";
-	transform: "translate(-50%, -50%)";
+.cmm-content {
 	width: 100%;
-    height: 50%;
-    background-color: white;
-
+	height: 100%;
+	background-color: white;
 }
-.message{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center!important;
-    align-items: center!important;
-    height: 75%;
+.cmm-message {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center !important;
+	align-items: center !important;
+	height: 90%;
 }
-.title {
+.cmm-title {
+	margin: 0;
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+	align-items: center;
 	font-size: 2.6rem;
 	border-radius: 1rem 1rem 0 0;
-	/* font-family: $heading-font; */
 	font-style: italic;
 	font-weight: normal;
-	color: white;
-	padding-left: 2rem;
+	height: 10%;
 }
 svg {
 	color: black;
 	padding: 0rem 1rem;
 	font-size: 3rem;
 }
-.MuiBox-root {
+/* .MuiBox-root {
 	display: flex;
 	align-items: center;
-	justify-content: start;
+	justify-content: start; */
+/* } */
+.cmm-close-button {
+	width: 3rem;
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	align-items: center;
 }

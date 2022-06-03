@@ -1,6 +1,6 @@
 {
 	"name": "custom-message-react-modal",
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"description": "Generic modal to display custom message",
 	"keywords": [
 		"modal",
@@ -23,8 +23,8 @@
 		"rimraf": "^3.0.2"
 	},
 	"peerDependencies": {
-		"react": "^18.1.0",
-		"react-dom": "^18.1.0"
+		"react": "^16.1.0",
+		"react-dom": "^16.1.0"
 	},
 	"dependencies": {
 		"@babel/polyfill": "^7.12.1",

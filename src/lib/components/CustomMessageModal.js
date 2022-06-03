@@ -1,21 +1,9 @@
 import * as React from "react";
-import Box from "@mui/material/Box";
-import Modal from "@mui/material/Modal";
+// import Modal from "@mui/material/Modal";
 import IconButton from "@material-ui/core/IconButton";
 import CloseIcon from "@mui/icons-material/Close";
-import "./CustomMessageModal.css"
+import "./CustomMessageModal.css";
 
-// const style = {
-	// position: "absolute",
-	// top: "50%",
-	// left: "50%",
-	// transform: "translate(-50%, -50%)",
-	// width: 400,
-	// bgcolor: "background.paper",
-	// border: "2px solid #000",
-	// boxShadow: 24,
-	// p: 4,
-// };
 
 export default function CustomMessageModal(props) {
 	const [open, setOpen] = React.useState(false);
@@ -39,21 +27,25 @@ export default function CustomMessageModal(props) {
 
 	return (
 		<div>
-			<Modal open={open} onClose={handleClose}>
-				<Box className="modal">
-					<div className="content">
-						<Box display="flex" alignItems="center" className="title ">
-							<Box flexGrow={1}></Box>
-							<Box>
+			{/* <Modal open={open} onClose={handleClose}> */}
+			<div className={`cmm-backdrop${isOpen?`open`:``}`}>
+				<div className="cmm-modal">
+					<div className="cmm-content">
+						<div className="cmm-title ">
+							<div></div>
+							<div className="cmm-close-button">
 								<IconButton onClick={handleClose}>
 									<CloseIcon />
 								</IconButton>
-							</Box>
-						</Box>
-						<Box className="message"><p>{props.messageToDisplay}</p></Box>
+							</div>
+						</div>
+						<div className="cmm-message">
+							<p>{props.messageToDisplay}</p>
+						</div>
 					</div>
-				</Box>
-			</Modal>
+				</div>
+			{/* </Modal> */}
+			</div>
 		</div>
 	);
 }
