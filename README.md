@@ -8,7 +8,7 @@ Modal jsx element with customizable message
 * [Examples](#examples)
 
 ## Features
-- Allow customization of messages that is displayed in modal
+- Allow customization of message that is displayed in modal
 - Allow style customization
 
 If you want to override a component's styles using custom classes, you can use the className prop, available on each component. For exemple, target the **.cmm-backdrop** class name to customize the Backdrop element :
