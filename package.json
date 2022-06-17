@@ -1,6 +1,6 @@
 {
 	"name": "custom-message-react-modal",
-	"version": "1.0.22",
+	"version": "1.0.23",
 	"description": "Generic modal to display custom message",
 	"keywords": [
 		"modal",
@@ -12,7 +12,7 @@
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/nicolas-derobert/modal.git"
-	  },
+	},
 	"main": "dist/index.js",
 	"module": "dist/index.js",
 	"files": [
@@ -62,9 +62,5 @@
 			"last 1 firefox version",
 			"last 1 safari version"
 		]
-	},
-	"repository": {
-		"type": "git",
-		"url": "URL_OF_YOUR_REPOSITORY"
 	}
 }
