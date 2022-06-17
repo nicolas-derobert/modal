@@ -1,6 +1,6 @@
 {
 	"name": "custom-message-react-modal",
-	"version": "1.0.21",
+	"version": "1.0.22",
 	"description": "Generic modal to display custom message",
 	"keywords": [
 		"modal",
@@ -9,6 +9,10 @@
 	],
 	"licence": "MIT",
 	"author": "Nicolas DEROBERT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/nicolas-derobert/modal.git"
+	  },
 	"main": "dist/index.js",
 	"module": "dist/index.js",
 	"files": [
