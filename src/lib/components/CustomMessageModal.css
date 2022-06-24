@@ -1,16 +1,16 @@
 .modalnewsletterform {
 }
-.cmm-backdrop{
+.cmm-backdrop {
 	display: none;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	width: 100vw; 
+	width: 100vw;
 	height: 100vh;
 	background-color: rgb(219, 219, 219);
 }
-.cmm-backdrop.open{
+.cmm-backdrop.open {
 	display: block;
 }
 .cmm-modal {
@@ -18,7 +18,7 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	width: 40%; 
+	width: 40%;
 	height: 50%;
 	border-radius: 1rem;
 	/* background-color: grey; */
@@ -47,20 +47,21 @@
 	font-weight: normal;
 	height: 10%;
 }
-svg {
-	color: black;
-	padding: 0rem 1rem;
-	font-size: 3rem;
+.cmm-button {
+	border: none;
+	background-color: white;
+	padding: 0;
+	margin: 0;
 }
-/* .MuiBox-root {
-	display: flex;
-	align-items: center;
-	justify-content: start; */
-/* } */
 .cmm-close-button {
 	width: 3rem;
 	display: flex;
 	flex-flow: row;
 	justify-content: center;
 	align-items: center;
+}
+.cmm-button svg {
+	padding: 0;
+	color: black;
+	font-size: 1.5rem;
 }

@@ -1,8 +1,6 @@
 import * as React from "react";
-import IconButton from '@mui/material/IconButton';
-import CloseIcon from "@mui/icons-material/Close";
 import "./CustomMessageModal.css";
-
+import { AiOutlineClose } from "react-icons/ai";
 
 export default function CustomMessageModal(props) {
 	const [open, setOpen] = React.useState(false);
@@ -13,7 +11,6 @@ export default function CustomMessageModal(props) {
 	};
 
 	const isOpen = props.isOpen;
-	// const closeRequest = props.onRequestClose;
 
 	React.useEffect(() => {
 		if (isOpen === true) {
@@ -26,16 +23,15 @@ export default function CustomMessageModal(props) {
 
 	return (
 		<div>
-			{/* <Modal open={open} onClose={handleClose}> */}
 			<div className={`cmm-backdrop${open?` open`:``}`}>
 				<div className="cmm-modal">
 					<div className="cmm-content">
 						<div className="cmm-title ">
 							<div></div>
 							<div className="cmm-close-button">
-								<IconButton onClick={handleClose}>
-									<CloseIcon />
-								</IconButton>
+								<button onClick={handleClose} className="cmm-button" >
+									<AiOutlineClose />
+								</button>
 							</div>
 						</div>
 						<div className="cmm-message">
@@ -43,7 +39,6 @@ export default function CustomMessageModal(props) {
 						</div>
 					</div>
 				</div>
-			{/* </Modal> */}
 			</div>
 		</div>
 	);
